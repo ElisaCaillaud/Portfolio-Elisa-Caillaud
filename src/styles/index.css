@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Abril;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../assets/fonts/Abril/AbrilFatface-Regular.ttf");
+}
+@font-face {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../assets/fonts/Lato/Lato-Bold.ttf");
+}
+
+@font-face {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../assets/fonts/Lato/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../assets/fonts/Lato/Lato-Light.ttf");
+}
+
+body {
+  height: 100vh;
+  background: radial-gradient(
+        94.29% 94.29% at -19.41% -32.57%,
+        #edf1d6 0%,
+        #9dc08b 0%,
+        #edf1d6 85.01%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    radial-gradient(
+      94.29% 94.29% at -19.41% -32.57%,
+      #edf1d6 0%,
+      #9dc08b 0%,
+      #edf1d6 85.01%
+    );
+  background-repeat: no-repeat;
+  /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+}
