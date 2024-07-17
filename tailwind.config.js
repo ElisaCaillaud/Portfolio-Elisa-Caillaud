@@ -11,11 +11,31 @@ module.exports = {
       abril: ["Abril", "serif"],
       lato: ["Lato", "sans-serif"],
     },
+    fontSize: {
+      sm: "16px",
+      base: "17px",
+      xl: "23px",
+      "40px": "40px",
+      "45px": "45px",
+      "28px": "28px",
+    },
+    borderRadius: {
+      none: "0",
+      sm: "16px",
+      DEFAULT: "13px",
+      md: "23px",
+    },
     extend: {
       fontWeight: {
         normal: 400,
         medium: 500,
         bold: 700,
+      },
+      boxShadow: {
+        menu: "0 3px 36px -4px rgba(0, 0, 0, 0.14)",
+      },
+      width: {
+        155: "155px",
       },
     },
   },
