@@ -1,7 +1,7 @@
 import { ArrowLongDownIcon } from "@heroicons/react/20/solid";
 
 const APropos = () => (
-  <div className="text-center mt-60 h-screen">
+  <div id="a-propos" className="text-center mt-60 h-screen">
     <h1 className="text-45px font-abril tracking-tight text-darkGreen sm:text-6xl">
       Elisa Caillaud
     </h1>

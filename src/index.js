@@ -10,12 +10,12 @@ root.render(
     <div>
       <Header />
       <Home />
-      <section id="accueil"> </section>
+      {/*<section id="accueil"> </section>
       <section id="a-propos"> </section>
       <section id="competences"> </section>
       <section id="realisations"> </section>
       <section id="parcours"> </section>
-      <section id="contact"> </section>
+      <section id="contact"> </section>*/}
     </div>
   </React.StrictMode>
 );
