@@ -1,0 +1,46 @@
+[
+  {
+    "title": "Développement",
+    "liste": [
+      "Javascript",
+      "Mongo DB",
+      "SASS",
+      "REACT",
+      "HTML/CSS",
+      "Postman",
+      "HTML",
+      "Swagger",
+      "SQL",
+      "Api Rest",
+      "CSS",
+      "Node.js",
+      "Express"
+    ]
+  },
+  {
+    "title": "CMS",
+    "liste": [
+      "Wordpress",
+      "WooCommerce",
+      "PHP",
+      "Dev. personnalisés",
+      "Builders",
+      "Plugins"
+    ]
+  },
+  {
+    "title": "Web",
+    "liste": [
+      "Rédactions articles",
+      "Accessibilité",
+      "Chat GPT",
+      "Agile",
+      "Lighthouse",
+      "Community Management",
+      "UX Design",
+      "Graphisme",
+      "SEO",
+      "Optimisations performances"
+    ]
+  }
+]
