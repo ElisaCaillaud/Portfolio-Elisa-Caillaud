@@ -1,7 +1,7 @@
 [
   {
     "title": "Développement",
-    "liste": [
+    "list": [
       "Javascript",
       "Mongo DB",
       "SASS",
@@ -14,12 +14,13 @@
       "Api Rest",
       "CSS",
       "Node.js",
-      "Express"
+      "Express",
+      "Github"
     ]
   },
   {
     "title": "CMS",
-    "liste": [
+    "list": [
       "Wordpress",
       "WooCommerce",
       "PHP",
@@ -30,8 +31,8 @@
   },
   {
     "title": "Web",
-    "liste": [
-      "Rédactions articles",
+    "list": [
+      "Articles",
       "Accessibilité",
       "Chat GPT",
       "Agile",
@@ -40,7 +41,7 @@
       "UX Design",
       "Graphisme",
       "SEO",
-      "Optimisations performances"
+      "Performances"
     ]
   }
 ]

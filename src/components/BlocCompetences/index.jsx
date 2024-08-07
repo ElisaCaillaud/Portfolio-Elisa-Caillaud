@@ -3,20 +3,26 @@
 import competences from "../../datas/competences.json";
 import Button from "../Competences";
 
-const BlocCompetences = () => {
-  const indices = [0, 2, 4, 5, 7, 10];
-  const flatCompetences = competences.flatMap((section) => section.liste);
-  const developpement = competences[0]?.title;
+const BlocCompetences = ({ title, indices, indicesOutils, bgColor }) => {
+  const flatCompetences = competences.flatMap((section) => section.list);
 
   return (
-    <div className="">
-      <div className="p-4 rounded-md mb-4 bg-darkGreen w-1/4 shadow-menu text-left">
-        <h2 className="font-abril text-lightGreen text-40px">
-          {developpement}
-        </h2>
-        <p className="text-xl text-lightGreen font-medium">Technologies</p>
+    <div
+      className={`p-4 rounded-md mb-4 ${bgColor} w-1/6 shadow-menu text-left`}
+    >
+      <h2 className="font-abril text-lightGreen text-40px">{title}</h2>
+      <p className="text-xl text-lightGreen font-medium">Technologies</p>
+      <div className="flex flex-wrap">
+        {indices.map((index) => (
+          <div key={index} className=" p-2">
+            <Button type="clair" text={flatCompetences[index]} />
+          </div>
+        ))}
+      </div>
+      <p className="text-xl text-lightGreen font-medium">Outils</p>
+      <div className="w-fit">
         <div className="grid grid-cols-3 gap-4">
-          {indices.map((index) => (
+          {indicesOutils.map((index) => (
             <Button key={index} type="clair" text={flatCompetences[index]} />
           ))}
         </div>

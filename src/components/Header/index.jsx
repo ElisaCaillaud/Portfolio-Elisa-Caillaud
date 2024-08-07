@@ -14,6 +14,10 @@ const navigation = [
 export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  const closedMenu = (event) => {
+    setMobileMenuOpen(false);
+  };
+
   return (
     <header className="w-full fixed top-1 flex justify-center">
       <nav
@@ -70,6 +74,9 @@ export default function Example() {
                   <a
                     key={item.name}
                     href={item.href}
+                    onClick={() => {
+                      closedMenu();
+                    }}
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     {item.name}

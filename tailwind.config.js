@@ -37,6 +37,14 @@ module.exports = {
       width: {
         155: "155px",
       },
+      backgroundImage: {
+        booki: "url('../assets/images/booki.webp')",
+        sophie: "url('src/images/sophieBluel.webp')",
+        nina: "url('src/images/NinaCarducci.webp')",
+        menuMaker: "url('src/images/menuMaker.webp')",
+        grimoire: "url('src/images/vieuxGrimoire.webp')",
+        kasa: "url('src/images/kasa.webp')",
+      },
     },
   },
 
