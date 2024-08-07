@@ -1,9 +1,10 @@
 import Button from "../Competences";
 import competences from "../../datas/competences.json";
+import BlocRealisations from "../blocRealisations";
 
 const SectionRealisations = ({ indicesOutils }) => {
   // Aplatir le tableau de compétences pour pouvoir le parcourir
-  const flatCompetences = competences.flatMap((section) => section.liste);
+  const flatSkills = competences.flatMap((section) => section.list);
 
   return (
     <div id="realisations" className="text-center mt-60 h-screen">
@@ -12,11 +13,10 @@ const SectionRealisations = ({ indicesOutils }) => {
       </h1>
       <div className="p-2 flex justify-center gap-6">
         {indicesOutils.map((index) => {
-          return (
-            <Button key={index} type="fonce" text={flatCompetences[index]} />
-          );
+          return <Button key={index} type="fonce" text={flatSkills[index]} />;
         })}
       </div>
+      <BlocRealisations />
     </div>
   );
 };
