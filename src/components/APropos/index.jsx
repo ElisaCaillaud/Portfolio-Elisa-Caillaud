@@ -4,7 +4,7 @@ const APropos = () => (
       À propos
     </h1>
     <div className="w-full flex justify-center">
-      <p className="sm:w-full w-4/5 mt-6 text-xl leading-7 text-darkGreen font-lato">
+      <p className="lg:w-4/5 w-4/5 mt-6 text-xl leading-7 text-darkGreen font-lato">
         Après avoir obtenu un <b>Master en Cultures et Métiers du Web</b>, je me
         suis orientée vers une spécialisation en <b>développement front-end</b>.
         <br /> Fascinée par les comportements humains, je suis déterminée à

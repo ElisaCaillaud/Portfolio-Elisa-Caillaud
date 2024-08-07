@@ -18,17 +18,17 @@ const Competences = () => {
     {
       title: competences[2]?.title,
       indices: [29, 28, 21, 20],
-      indicesOutils: [24, 22, 23],
+      indicesOutils: [22, 23, 24],
       bgColor: "bg-green",
     },
   ];
 
   return (
-    <div id="competences" className="text-center mt-20 sm:mt-60">
+    <div id="competences" className="text-center mt-20 sm:mt-60 lg:px-5">
       <h1 className="text-45px font-abril tracking-tight text-darkGreen sm:text-6xl">
         Compétences
       </h1>
-      <div className="flex justify-center gap-5 mt-6">
+      <div className="flex flex-col items-center md:flex-col lg:flex-row justify-center gap-5 mt-6">
         {competencesData.map((data, index) => (
           <BlocCompetences
             key={index}
