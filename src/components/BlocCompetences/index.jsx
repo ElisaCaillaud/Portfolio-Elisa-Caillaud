@@ -1,5 +1,4 @@
 //Bloc de compétence principal affichant : le titre, la liste des compétences
-
 import competences from "../../datas/competences.json";
 import Button from "../Competences";
 

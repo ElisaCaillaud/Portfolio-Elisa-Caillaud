@@ -1,11 +1,13 @@
-//Bloc de realisations principal affichant les infos principales
 import React, { useState, useEffect } from "react";
 import realisations from "../../datas/realisations.json";
 import Button from "../Competences";
+import Modal from "../Modal"; // Import du composant Modal
 import "../../styles/index.css";
 
 const BlocRealisations = ({ filter }) => {
-  const [isSmallScreen, SmallScreen] = useState(window.innerWidth <= 768); //Initialisation de la largeur de l'ecran
+  const [isSmallScreen, SmallScreen] = useState(window.innerWidth <= 768); // Initialisation de la largeur de l'écran
+  const [isModalOpen, setModalOpen] = useState(false); // État pour gérer la visibilité de la modale
+  const [selectedRealisation, setSelectedRealisation] = useState(null); // État pour stocker la réalisation sélectionnée
 
   useEffect(() => {
     const resize = () => {
@@ -16,48 +18,60 @@ const BlocRealisations = ({ filter }) => {
     window.addEventListener("resize", resize);
   }, []);
 
-  //Filtrage des realisations
+  // Filtrage des réalisations
   const filteredRealisations = filter
     ? realisations.filter((realisation) => realisation.filter === filter)
     : realisations;
 
+  // Fonction pour fermer la modale
+  const handleButtonClick = (realisation) => {
+    setSelectedRealisation(realisation);
+    setModalOpen(true);
+  };
+
   return (
     <div
       className={`w-4/5 2xl:w-3/6 md:w-4/5 mt-6 grid-container ${
-        isSmallScreen ? "single-column" : "" //vérification de la taille de l'écran pour appliquer une ou plusieurs colonnes
-      }${filter ? "filtered" : ""}`} //ajout d'une classe pour les blocs filtrés
+        isSmallScreen ? "single-column" : ""
+      }${filter ? "filtered" : ""}`}
     >
       {filteredRealisations.map((realisation, index) => {
-        //permet de déterminer si la ligne est pair ou impair, si 0=pair, si 1=impair
-        //vérifie si la ligne entiere est pair ou impair
         const even = Math.floor(index / 2) % 2 === 0;
-
-        //vérifie si l'element est le premier de la pair par rapport á l'index
         const pair = index % 2 === 0;
 
         const gridStyle = {
-          gridColumnStart: even ? (pair ? 1 : 8) : pair ? 1 : 6, //debut de la colonne
-          gridColumnEnd: even ? (pair ? 8 : 13) : pair ? 6 : 13, //fin de la colonne
+          gridColumnStart: even ? (pair ? 1 : 8) : pair ? 1 : 6, // Début de la colonne
+          gridColumnEnd: even ? (pair ? 8 : 13) : pair ? 6 : 13, // Fin de la colonne
         };
 
         return (
           <div key={index} style={gridStyle} className="card-container">
-            <div className="card flex flex-col items-center text-center justify-center h-80 p-4 rounded-md w-full shadow-menu bg-darkGreen">
-              <h2 className=" font-abril text-lightGreen text-40px">
+            <div className="card flex flex-col items-center text-center justify-center h-80 p-7 rounded-md w-full shadow-menu bg-darkGreen">
+              <h2 className="font-abril text-lightGreen text-40px leading-none mb-5">
                 {realisation.title}
               </h2>
-              <p className="text-xl text-lightGreen font-medium">
+              <p className="text-xl text-lightGreen font-medium leading-none">
                 {realisation.resume}
               </p>
               <Button
                 type="clair"
                 text="Découvrir"
-                style={{ marginTop: "5rem" }}
-              />{" "}
+                style={{ marginTop: "4rem" }}
+                onClick={() => handleButtonClick(realisation)} // Ouvre la modale avec la réalisation sélectionnée
+              />
             </div>
           </div>
         );
       })}
+
+      {/* Affichage de la modale */}
+      {selectedRealisation && (
+        <Modal
+          isOpen={isModalOpen}
+          onClose={() => setModalOpen(false)}
+          realisation={selectedRealisation}
+        />
+      )}
     </div>
   );
 };
