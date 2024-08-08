@@ -5,6 +5,7 @@
     "year": "2023",
     "skills": "Front-end",
     "cover": "../../../assets/images/booki.webp",
+    "gridClass": "md:col-span-8",
     "description": "Site de recherche de logements et d'activités Site de recherche de logements et d'activités Site de recherche de logements et d'activités Site de recherche de logements et d'activités"
   },
   {
@@ -13,6 +14,7 @@
     "year": "2023",
     "skills": "Front-end dynamique",
     "cover": "../../../assets/images/sophieBluel.webp",
+    "gridClass": "md:col-span-4",
     "description": "Site de recherche de logements et d'activités Site de recherche de logements et d'activités Site de recherche de logements et d'activités Site de recherche de logements et d'activités"
   },
   {
@@ -21,6 +23,7 @@
     "year": "2023",
     "skills": "Optimisation & Référencement",
     "cover": "../../../assets/images/NinaCarducci.webp",
+    "gridClass": "md:col-span-8",
     "description": "Site de recherche de logements et d'activités Site de recherche de logements et d'activités Site de recherche de logements et d'activités Site de recherche de logements et d'activités"
   },
   {
@@ -29,6 +32,7 @@
     "year": "2024",
     "skills": "Gestion de projet",
     "cover": "../../../assets/images/menuMaker.webp",
+    "gridClass": "md:col-span-4",
     "description": "Site de recherche de logements et d'activités Site de recherche de logements et d'activités Site de recherche de logements et d'activités Site de recherche de logements et d'activités"
   },
   {
@@ -37,6 +41,7 @@
     "year": "2024",
     "skills": "REACT",
     "cover": "../../../assets/images/booki.webp/assets/images/kasa.webp",
+    "gridClass": "md:col-span-8",
     "description": "Site de recherche de logements et d'activités Site de recherche de logements et d'activités Site de recherche de logements et d'activités Site de recherche de logements et d'activités"
   },
   {
@@ -45,6 +50,7 @@
     "year": "2024",
     "skills": "Back-end",
     "cover": "../../../assets/images/vieuxGrimoire.webp",
+    "gridClass": "md:col-span-4",
     "description": "Site de recherche de logements et d'activités Site de recherche de logements et d'activités Site de recherche de logements et d'activités Site de recherche de logements et d'activités"
   }
 ]

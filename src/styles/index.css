@@ -50,3 +50,17 @@ body {
   background-repeat: no-repeat;
   /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 16px; /* Adjust as needed */
+}
+
+.single-column {
+  grid-template-columns: 1fr; /* Une seule colonne pour les petits écrans */
+}
+
+.single-column .card-container {
+  grid-column: 1 / -1 !important; /* Chaque carte occupe toute la largeur de la grille */
+}
