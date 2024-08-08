@@ -4,8 +4,8 @@
     "resume": "Site de recherche de logements et d'activités",
     "year": "2023",
     "skills": "Front-end",
+    "filter": "HTML/CSS",
     "cover": "../../../assets/images/booki.webp",
-    "gridClass": "md:col-span-8",
     "description": "Site de recherche de logements et d'activités Site de recherche de logements et d'activités Site de recherche de logements et d'activités Site de recherche de logements et d'activités"
   },
   {
@@ -13,8 +13,8 @@
     "resume": "Portfolio d'une architecte d'intérieur",
     "year": "2023",
     "skills": "Front-end dynamique",
+    "filter": "Javascript",
     "cover": "../../../assets/images/sophieBluel.webp",
-    "gridClass": "md:col-span-4",
     "description": "Site de recherche de logements et d'activités Site de recherche de logements et d'activités Site de recherche de logements et d'activités Site de recherche de logements et d'activités"
   },
   {
@@ -22,8 +22,8 @@
     "resume": "Site vitrine d'une photographe",
     "year": "2023",
     "skills": "Optimisation & Référencement",
+    "filter": "SEO",
     "cover": "../../../assets/images/NinaCarducci.webp",
-    "gridClass": "md:col-span-8",
     "description": "Site de recherche de logements et d'activités Site de recherche de logements et d'activités Site de recherche de logements et d'activités Site de recherche de logements et d'activités"
   },
   {
@@ -31,8 +31,8 @@
     "resume": "Site d'édition de menu pour restaurants",
     "year": "2024",
     "skills": "Gestion de projet",
+    "filter": "Gestion de projet",
     "cover": "../../../assets/images/menuMaker.webp",
-    "gridClass": "md:col-span-4",
     "description": "Site de recherche de logements et d'activités Site de recherche de logements et d'activités Site de recherche de logements et d'activités Site de recherche de logements et d'activités"
   },
   {
@@ -40,8 +40,8 @@
     "resume": "Plateforme de location d'appartements",
     "year": "2024",
     "skills": "REACT",
+    "filter": "REACT",
     "cover": "../../../assets/images/booki.webp/assets/images/kasa.webp",
-    "gridClass": "md:col-span-8",
     "description": "Site de recherche de logements et d'activités Site de recherche de logements et d'activités Site de recherche de logements et d'activités Site de recherche de logements et d'activités"
   },
   {
@@ -49,8 +49,8 @@
     "resume": "Site de référencement et de notation de livres",
     "year": "2024",
     "skills": "Back-end",
+    "filter": "Api Rest",
     "cover": "../../../assets/images/vieuxGrimoire.webp",
-    "gridClass": "md:col-span-4",
     "description": "Site de recherche de logements et d'activités Site de recherche de logements et d'activités Site de recherche de logements et d'activités Site de recherche de logements et d'activités"
   }
 ]

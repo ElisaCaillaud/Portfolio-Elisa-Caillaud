@@ -4,7 +4,7 @@ import realisations from "../../datas/realisations.json";
 import Button from "../Competences";
 import "../../styles/index.css";
 
-const BlocRealisations = () => {
+const BlocRealisations = ({ filter }) => {
   const [isSmallScreen, SmallScreen] = useState(window.innerWidth <= 768); //Initialisation de la largeur de l'ecran
 
   useEffect(() => {
@@ -16,13 +16,17 @@ const BlocRealisations = () => {
     window.addEventListener("resize", resize);
   }, []);
 
+  const filteredRealisations = filter
+    ? realisations.filter((realisation) => realisation.filter === filter)
+    : realisations; //Filtrage des realisations
+
   return (
     <div
       className={`w-4/5 2xl:w-3/6 md:w-4/5 mt-6 grid-container ${
         isSmallScreen ? "single-column" : "" //vérification de la taille de l'écran pour appliquer une ou plusieurs colonnes
       }`}
     >
-      {realisations.map((realisation, index) => {
+      {filteredRealisations.map((realisation, index) => {
         //permet de déterminer si la ligne est pair ou impair, si 0=pair, si 1=impair
         //vérifie si la ligne entiere est pair ou impair
         const even = Math.floor(index / 2) % 2 === 0;
