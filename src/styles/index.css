@@ -51,10 +51,13 @@ body {
   /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
 }
 
+/******Section realisation********/
+
+/*Gestion grid des blocs*/
 .grid-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: 16px; /* Adjust as needed */
+  gap: 16px;
 }
 
 .single-column {
@@ -62,5 +65,22 @@ body {
 }
 
 .single-column .card-container {
-  grid-column: 1 / -1 !important; /* Chaque carte occupe toute la largeur de la grille */
+  grid-column: 1 / -1 !important;
 }
+
+/*Style des blocs filtrés*/
+.filtered {
+  display: flex;
+  justify-content: center;
+  grid-column-start: 1 !important;
+  grid-column-end: 13 !important;
+}
+
+@media screen and (max-width: 768px) {
+  .single-columnfiltered .card-container {
+    grid-column-start: 1 !important;
+    grid-column-end: 13 !important;
+  }
+}
+
+/*****Fin section realisation*****/

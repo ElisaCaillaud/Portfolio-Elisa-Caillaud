@@ -4,7 +4,7 @@ import competences from "../../datas/competences.json";
 import BlocRealisations from "../blocRealisations";
 
 const SectionRealisations = () => {
-  // Définir les index directement ici
+  // Définir les index de tri ici
   const indicesOutils = [0, 3, 4, 9, 28, 30];
 
   const flatSkills = competences.flatMap((section) => section.list);

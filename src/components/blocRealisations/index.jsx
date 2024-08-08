@@ -16,15 +16,16 @@ const BlocRealisations = ({ filter }) => {
     window.addEventListener("resize", resize);
   }, []);
 
+  //Filtrage des realisations
   const filteredRealisations = filter
     ? realisations.filter((realisation) => realisation.filter === filter)
-    : realisations; //Filtrage des realisations
+    : realisations;
 
   return (
     <div
       className={`w-4/5 2xl:w-3/6 md:w-4/5 mt-6 grid-container ${
         isSmallScreen ? "single-column" : "" //vérification de la taille de l'écran pour appliquer une ou plusieurs colonnes
-      }`}
+      }${filter ? "filtered" : ""}`} //ajout d'une classe pour les blocs filtrés
     >
       {filteredRealisations.map((realisation, index) => {
         //permet de déterminer si la ligne est pair ou impair, si 0=pair, si 1=impair
