@@ -28,9 +28,9 @@ const Accueil = () => (
         Linkedin
       </a>
       <a
-        href="https://www.linkedin.com/in/elisa-caillaud/"
+        href={process.env.PUBLIC_URL + "/docs/CV_Elisa_Caillaud.pdf"}
         target="_blank"
-        rel="noopener noreferrer"
+        rel="noreferrer"
         className="w-155 text-lightGreen rounded bg-darkGreen px-3.5 py-2.5 text-base font-semibold text-white shadow-menu"
       >
         Mon CV

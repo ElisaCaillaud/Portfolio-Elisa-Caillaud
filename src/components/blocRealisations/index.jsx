@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import realisations from "../../datas/realisations.json";
 import Button from "../Competences";
-import Modal from "../Modal"; // Import du composant Modal
+import Modal from "../Modal";
 import "../../styles/index.css";
 
 const BlocRealisations = ({ filter }) => {
@@ -81,7 +81,7 @@ const BlocRealisations = ({ filter }) => {
                   pointerEvents: "none",
                 }}
               />
-              <h2 className="font-abril text-lightGreen text-40px leading-none mb-5 z-10">
+              <h2 className="font-abril text-lightGreen text-28px md:text-40px leading-none mb-5 z-10">
                 {realisation.title}
               </h2>
               <p className="text-xl text-lightGreen font-medium leading-none z-10">

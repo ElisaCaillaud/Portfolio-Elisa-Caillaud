@@ -30,11 +30,11 @@ const SectionParcours = () => {
   ];
 
   return (
-    <div id="parcours" className="text-center mt-20 sm:mt-60 lg:px-5">
+    <div id="parcours" className="text-center mt-20 sm:mt-30 lg:px-5">
       <h1 className="text-45px font-abril tracking-tight text-darkGreen sm:text-6xl">
         Parcours
       </h1>
-      <div className="!flex !flex-col !align-center md:flex-col lg:flex-row justify-center gap-5 mt-6">
+      <div className="!flex !flex-col items-center md:flex-col lg:flex-row justify-center gap-5 mt-6">
         {parcoursData.map((data, index) => (
           <BlocParcours
             key={index}

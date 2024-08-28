@@ -1,5 +1,5 @@
 const APropos = () => (
-  <div id="a-propos" className="text-center mt-20 sm:mt-60">
+  <div id="a-propos" className="text-center mt-20 sm:mt-30">
     <h1 className="text-45px font-abril tracking-tight text-darkGreen sm:text-6xl">
       À propos
     </h1>

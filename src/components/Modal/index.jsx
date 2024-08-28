@@ -22,7 +22,7 @@ export default function Modal({ isOpen, onClose, realisation }) {
         setOpen(false);
         onClose();
       }}
-      className="relative z-10"
+      className="relative z-20"
     >
       <DialogBackdrop
         transition
@@ -35,18 +35,26 @@ export default function Modal({ isOpen, onClose, realisation }) {
             className="relative transform overflow-hidden rounded-md bg-lightGreen text-left shadow-xl transition-all data-[closed]:translate-y-4 data-[closed]:opacity-0 data-[enter]:duration-300 data-[leave]:duration-200 data-[enter]:ease-out data-[leave]:ease-in sm:my-8 sm:w-full lg:max-w-4xl xl:max-w-5xl data-[closed]:sm:translate-y-0 data-[closed]:sm:scale-95"
           >
             <div className="px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
-              <div className="sm:flex sm:items-start">
-                <div className="mt-3 text-center sm:ml-3 sm:mt-0 sm:text-left">
+              <div className="sm:flex sm:items-center ">
+                <div className="mt-3 text-center sm:mt-0 sm:text-left">
                   <DialogTitle
                     as="h3"
-                    className="mb-4 leading-7 text-28px text-darkGreen font-abril"
+                    className="mb-4 leading-7 text-28px text-darkGreen font-abril text-center"
                   >
                     {realisation.title}
                   </DialogTitle>
-                  <div className="mt-2">
-                    <p className="leading-7 text-base text-darkGreen font-lato">
+                  <div className="mt-2 text-center">
+                    <p className="leading-7 text-base text-darkGreen font-lato text-center mb-4">
                       {realisation.description}
                     </p>
+                    <div>
+                      <p className="leading-7 text-sm font-bold text-darkGreen font-lato text-center ">
+                        Détails supplémentaires :
+                      </p>
+                      <p className="leading-7 text-sm text-darkGreen font-lato text-center mb-4">
+                        {realisation.details}
+                      </p>
+                    </div>
                   </div>
                   <div className="flex flex-wrap justify-center mt-4">
                     {realisation.skills.map((skill, index) => (
@@ -55,13 +63,21 @@ export default function Modal({ isOpen, onClose, realisation }) {
                       </div>
                     ))}
                   </div>
+                  <a
+                    href={realisation.github}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-green underline"
+                  >
+                    Source Github
+                  </a>
                   <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
                     {realisation.pictures.map((picture, index) => (
                       <img
                         key={index}
                         src={process.env.PUBLIC_URL + picture}
                         alt={`Realisation ${index + 1}`}
-                        className="rounded-md"
+                        className="rounded-md h-[420px] w-[460px] object-cover"
                       />
                     ))}
                   </div>

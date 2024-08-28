@@ -10,7 +10,9 @@ const BlocCompetences = ({ title, indices, indicesOutils, bgColor }) => {
       <div
         className={`p-4 rounded-md mb-4 ${bgColor} w-full shadow-menu text-left`}
       >
-        <h2 className="font-abril text-lightGreen text-40px">{title}</h2>
+        <h2 className="font-abril text-lightGreen text-28px md:text-40px">
+          {title}
+        </h2>
         <p className="text-xl text-lightGreen font-medium">Technologies</p>
         <div className="flex flex-wrap">
           {indices.map((index) => (

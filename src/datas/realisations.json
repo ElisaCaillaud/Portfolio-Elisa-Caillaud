@@ -7,8 +7,11 @@
     "filter": "HTML/CSS",
     "cover": "/images/booki.webp",
     "description": "Réalisation de l'intégration front-end de la page d'accueil de ce site de recherche de logements et d'activités.",
-    "pictures": ["/images/bookiHome.webp", "/images/bookiFooter.webp"]
+    "details": "Problématique réalisation du site en responsive et résolution avec l'aide de breakpoints en CSS",
+    "pictures": ["/images/bookiHome.webp", "/images/bookiFooter.webp"],
+    "github": "https://github.com/ElisaCaillaud/Booki"
   },
+
   {
     "title": "Sophie Bluel",
     "resume": "Portfolio d'une architecte d'intérieur",
@@ -17,8 +20,11 @@
     "filter": "Javascript",
     "cover": "/images/sophieBluel.webp",
     "description": "Développement de l'interface front-end du site, communiquant avec une API. Ajout d'une modale, d'une page de connexion et d'un upload média.",
-    "pictures": ["/images/sophieBluel.webp"]
+    "details": "Problématique de connexion API résolue avec le fonction fetch de Javascript, et avec l'aide de la plateforme Swagger",
+    "pictures": ["/images/sophieBluel.webp"],
+    "github": "https://github.com/ElisaCaillaud/SophieBluel"
   },
+
   {
     "title": "Nina Carducci",
     "resume": "Site vitrine d'une photographe",
@@ -33,8 +39,11 @@
     "filter": "SEO",
     "cover": "/images/NinaCarducci.webp",
     "description": "Prise en charge des problѐmes de chargement, d'accessibilité et d'optimisation SEO. Résolution de bugs CSS et Javascript. Obtention d'un score Mobile et Desktop Lighthouse de 90.",
-    "pictures": ["/images/ninaHome.webp", "/images/ninaFooter.webp"]
+    "details": "Site initial sujet à beaucoup de ralentissements, recherche de solutions via relecture du code puis correction et minification de CSS et Javascript",
+    "pictures": ["/images/ninaHome.webp", "/images/ninaFooter.webp"],
+    "github": "https://github.com/ElisaCaillaud/NinaCarducci"
   },
+
   {
     "title": "Qwenta : Menu Maker",
     "resume": "Site d'édition de menu pour restaurants",
@@ -43,8 +52,10 @@
     "filter": "Gestion de projet",
     "cover": "/images/menuMaker.webp",
     "description": "Planification agile en vue du développement de la plateforme. Mise en place des spécifications techniques, de la veille technologique, et présentation des solutions au client.",
+    "details": "Demande client précise, à laquelle j'ai répondu par un tableau Trello et un fichier de spécifications techniques, ainsi qu'une discussion avec le client afin de lui expliquer clairement les tenants et aboutissants de l'avancée du projet.",
     "pictures": ["/images/menuMaker.webp"]
   },
+
   {
     "title": "Kasa",
     "resume": "Plateforme de location d'appartements",
@@ -60,12 +71,15 @@
     "filter": "REACT",
     "cover": "/images/kasa.webp",
     "description": "Intégration du site en React et SASS. Interface modulaire, responsive et dynamique du site par rapport à des données en JSON. Ajout d'animation CSS pour la fluidité de navigation des utilisateurs.",
+    "details": "Nécessité de créer des composants réutilisables en REACT afin de faciliter la suite du développement pour l'équipe front-end.",
     "pictures": [
       "/images/kasaHome.webp",
       "/images/kasaAbout.webp",
       "/images/kasaHouse.webp"
-    ]
+    ],
+    "github": "https://github.com/ElisaCaillaud/Projet-Kasa"
   },
+
   {
     "title": "Mon Vieux Grimoire",
     "resume": "Site de référencement et de notation de livres",
@@ -74,10 +88,12 @@
     "filter": "Api Rest",
     "cover": "/images/vieuxGrimoire.webp",
     "description": "Implémentation du back-end de la plateforme en suivant la documentation technique en place. Architecture en Modѐle-Vue-Contrôleur, avec la possibilité de créer un compte utilisateur. Utilisation de paramѐtres de sécurité : hashage des mdp, email unique...",
+    "details": "Nécessité de suivre le front-end déjà existant pour implémenter le back-end. Appui sur l'outil Postman pour vérifier que chaque connexion API est en accord avec l'existant.",
     "pictures": [
       "/images/mvgHome.webp",
       "/images/mvgBook.webp",
       "/images/mvgAdd.webp"
-    ]
+    ],
+    "github": "https://github.com/ElisaCaillaud/mvg-backend"
   }
 ]

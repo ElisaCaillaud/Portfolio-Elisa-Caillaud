@@ -5,6 +5,7 @@ import SectionCompetences from "../../components/SectionCompetences";
 import SectionRealisations from "../../components/SectionRealisations";
 import SectionParcours from "../../components/SectionParcours";
 import SectionContact from "../../components/SectionContact";
+import SectionFooter from "../../components/Footer";
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
       <SectionRealisations />
       <SectionParcours />
       <SectionContact />
+      <SectionFooter />
     </div>
   );
 }

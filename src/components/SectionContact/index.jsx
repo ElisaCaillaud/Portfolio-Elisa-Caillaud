@@ -1,7 +1,7 @@
 const SectionContact = () => {
   return (
     <div>
-      <div id="contact" className="text-center mt-20 sm:mt-60 lg:px-5">
+      <div id="contact" className="text-center mt-20 sm:mt-30 lg:px-5">
         <h1 className="text-45px font-abril tracking-tight text-darkGreen sm:text-6xl">
           Contact
         </h1>

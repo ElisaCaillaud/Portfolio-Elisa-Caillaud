@@ -11,12 +11,12 @@ const BlocParcours = ({ title, job, year, link, indices, bgColor }) => {
       <div
         className={`p-4 rounded-md mb-4 ${bgColor} w-full shadow-menu text-left`}
       >
-        <div className=" flex !w-full justify-between 2xl:w-1/6 md:w-4/5 mt-6">
-          <h2 className="font-abril text-lightGreen text-40px leading-10 pb-7">
+        <div className=" flex !w-full items-start justify-between 2xl:w-1/6 md:w-4/5">
+          <h2 className="font-abril text-lightGreen text-28px md:text-40px leading-10 pb-7">
             {title}
           </h2>
           <a href={link} target="_blank rel='noopener noreferrer'">
-            <LinkIcon className="w-12 h-12 text-darkGreen bg-lightGreen rounded-md p-2" />
+            <LinkIcon className="w-9 md:w-12 text-darkGreen bg-lightGreen rounded-md p-2" />
           </a>
         </div>
         <p className="text-base text-lightGreen font-medium leading-6 pb-2">
