@@ -38,7 +38,7 @@ module.exports = {
         155: "155px",
       },
       backgroundImage: {
-        booki: "url('src/assets/images/booki.webp')",
+        booki: "url('public/images/booki.webp')",
         sophie: "url('src/assets/images/sophieBluel.webp')",
         nina: "url('src/assets/images/NinaCarducci.webp')",
         menuMaker: "url('src/assets/images/menuMaker.webp')",

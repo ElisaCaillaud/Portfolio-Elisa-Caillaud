@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Idéfixe Publicité",
+    "job": "Développeur web",
+    "year": "Sep. 2023 - Sep. 2024",
+    "skills": [
+      "Wordpress",
+      "WooCommerce",
+      "PHP",
+      "Javascript",
+      "CSS/HTML",
+      "Builders",
+      "SEO",
+      "Community Management",
+      "Rédaction articles"
+    ],
+    "link": "https://idefixe.fr"
+  },
+  {
+    "title": "OpenClassrooms",
+    "job": "Développeur web - Diplôme de niveau 5",
+    "year": "Sep. 2023 - Sep. 2024",
+    "skills": [
+      "Javascript",
+      "CSS/HTML",
+      "SASS",
+      "React",
+      "Node.js",
+      "Express",
+      "Agile",
+      "Mongo DB",
+      "API Rest",
+      "SEO"
+    ],
+    "link": "https://openclassrooms.com/fr/paths/899-developpeur-web"
+  },
+  {
+    "title": "Université Gustave Eiffel",
+    "job": "Master Cultures et Métiers du web",
+    "year": "Sep. 2028 - Juil. 2020",
+    "skills": [
+      "PHP",
+      "CSS/HTML",
+      "jquery",
+      "SQL",
+      "Agile",
+      "UI/UX Design",
+      "Graphisme web"
+    ],
+    "link": "https://shs.univ-gustave-eiffel.fr/formations/master-cultures-et-metiers-du-web-cmw"
+  }
+]

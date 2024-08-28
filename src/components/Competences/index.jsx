@@ -19,7 +19,7 @@ const Button = ({ type = "clair", text, ...props }) => {
   const { background, text: textColor } = styles || {};
 
   const buttonClass = classNames(
-    "flex items-center justify-center w-fit font-small font-lato rounded-sm shadow-menu pl-4 pr-4 pt-1.5 pb-1.5",
+    "z-10 flex items-center justify-center w-fit font-small font-lato rounded-sm shadow-menu pl-4 pr-4 pt-1.5 pb-1.5",
     background,
     textColor
   );

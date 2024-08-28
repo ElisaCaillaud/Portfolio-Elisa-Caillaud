@@ -19,7 +19,7 @@ export default function Example() {
   };
 
   return (
-    <header className="w-full fixed top-1 flex justify-center">
+    <header className="z-20 w-full fixed top-1 flex justify-center">
       <nav
         aria-label="Global"
         className="flex justify-center mt-5 backdrop-blur-xl font-lato text-darkGreen font-bold text-base shadow-menu w-fit p-3 pl-8 pr-8 rounded-sm text-center"

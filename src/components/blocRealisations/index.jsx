@@ -5,17 +5,20 @@ import Modal from "../Modal"; // Import du composant Modal
 import "../../styles/index.css";
 
 const BlocRealisations = ({ filter }) => {
-  const [isSmallScreen, SmallScreen] = useState(window.innerWidth <= 768); // Initialisation de la largeur de l'écran
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 768); // Initialisation de la largeur de l'écran
   const [isModalOpen, setModalOpen] = useState(false); // État pour gérer la visibilité de la modale
   const [selectedRealisation, setSelectedRealisation] = useState(null); // État pour stocker la réalisation sélectionnée
 
   useEffect(() => {
     const resize = () => {
-      SmallScreen(window.innerWidth <= 768); // Fonction pour mettre à jour l'état chaque fois que la taille change
+      setIsSmallScreen(window.innerWidth <= 768); // Fonction pour mettre à jour l'état chaque fois que la taille change
     };
-
-    // Ajout d'un écouteur d'événement pour les changements de taille de l'écran
     window.addEventListener("resize", resize);
+
+    // Nettoyage de l'événement lorsque le composant est fermé
+    return () => {
+      window.removeEventListener("resize", resize);
+    };
   }, []);
 
   // Filtrage des réalisations
@@ -23,15 +26,21 @@ const BlocRealisations = ({ filter }) => {
     ? realisations.filter((realisation) => realisation.filter === filter)
     : realisations;
 
-  // Fonction pour fermer la modale
+  // Fonction pour gérer l'ouverture de la modale
   const handleButtonClick = (realisation) => {
     setSelectedRealisation(realisation);
     setModalOpen(true);
   };
 
+  // Fonction pour gérer la fermeture de la modale
+  const handleCloseModal = () => {
+    setModalOpen(false);
+    setSelectedRealisation(null);
+  };
+
   return (
     <div
-      className={`w-4/5 2xl:w-3/6 md:w-4/5 mt-6 grid-container ${
+      className={`w-4/5 2xl:w-7/12 md:w-4/5 mt-6 grid-container ${
         isSmallScreen ? "single-column" : ""
       }${filter ? "filtered" : ""}`}
     >
@@ -46,11 +55,36 @@ const BlocRealisations = ({ filter }) => {
 
         return (
           <div key={index} style={gridStyle} className="card-container">
-            <div className="card flex flex-col items-center text-center justify-center h-80 p-7 rounded-md w-full shadow-menu bg-darkGreen">
-              <h2 className="font-abril text-lightGreen text-40px leading-none mb-5">
+            <div
+              style={{
+                backgroundImage: `url(${
+                  process.env.PUBLIC_URL + realisation.cover
+                })`,
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+                position: "relative",
+                overflow: "hidden",
+              }}
+              key={index}
+              className="card flex flex-col items-center text-center justify-center h-80 p-7 rounded-md w-full shadow-menu"
+            >
+              <div
+                style={{
+                  content: '""',
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                  backgroundColor: "rgba(60, 98, 85, 0.9)",
+                  zIndex: 1,
+                  pointerEvents: "none",
+                }}
+              />
+              <h2 className="font-abril text-lightGreen text-40px leading-none mb-5 z-10">
                 {realisation.title}
               </h2>
-              <p className="text-xl text-lightGreen font-medium leading-none">
+              <p className="text-xl text-lightGreen font-medium leading-none z-10">
                 {realisation.resume}
               </p>
               <Button
@@ -65,10 +99,10 @@ const BlocRealisations = ({ filter }) => {
       })}
 
       {/* Affichage de la modale */}
-      {selectedRealisation && (
+      {isModalOpen && selectedRealisation && (
         <Modal
           isOpen={isModalOpen}
-          onClose={() => setModalOpen(false)}
+          onClose={handleCloseModal} // Ferme la modale
           realisation={selectedRealisation}
         />
       )}
