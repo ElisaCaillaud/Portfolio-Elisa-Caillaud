@@ -45,6 +45,10 @@ module.exports = {
         grimoire: "url('src/assets/images/vieuxGrimoire.webp')",
         kasa: "url('src/assets/images/kasa.webp')",
       },
+      screens: {
+        "max-1150": { max: "1150px" },
+        "min-1825": { min: "1825px" },
+      },
     },
   },
 

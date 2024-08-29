@@ -6,7 +6,7 @@ const BlocCompetences = ({ title, indices, indicesOutils, bgColor }) => {
   const flatCompetences = competences.flatMap((section) => section.list);
 
   return (
-    <div className="w-4/5 2xl:w-1/6 md:w-4/5 mt-6">
+    <div className="w-4/5 2xl:w-[19%] !min-1825:23% md:w-4/5 mt-6">
       <div
         className={`p-4 rounded-md mb-4 ${bgColor} w-full shadow-menu text-left`}
       >

@@ -28,7 +28,7 @@ const Competences = () => {
       <h1 className="text-45px font-abril tracking-tight text-darkGreen sm:text-6xl">
         Compétences
       </h1>
-      <div className="flex flex-col items-center md:flex-col lg:flex-row justify-center gap-10 mt-6">
+      <div className="flex flex-col items-center max-1150:flex-col lg:flex-row justify-center gap-10 mt-6">
         {competencesData.map((data, index) => (
           <BlocCompetences
             key={index}
