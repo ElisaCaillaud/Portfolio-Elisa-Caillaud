@@ -17,9 +17,15 @@ const SectionRealisations = () => {
 
   return (
     <div id="realisations" className="text-center mt-20 sm:mt-30">
-      <h1 className="text-45px font-abril tracking-tight text-darkGreen sm:text-6xl">
+      <h1 className="text-45px font-abril tracking-tight text-darkGreen mb-7 sm:text-6xl sm:mb-7">
         Réalisations
       </h1>
+      <div className="flex flex-col items-center">
+        <p className="text-green leading-4 w-4/5 mb-3">
+          Cliquez ci-dessous pour filtrer les réalisations et survolez-les pour
+          en savoir plus.
+        </p>
+      </div>
       <div className="w-full flex justify-center">
         <div className="p-2 flex flex-wrap w-4/5 justify-center gap-4 sm:gap-6">
           <Button

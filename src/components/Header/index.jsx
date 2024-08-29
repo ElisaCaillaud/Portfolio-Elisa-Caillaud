@@ -14,8 +14,15 @@ const navigation = [
 export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const closedMenu = (event) => {
-    setMobileMenuOpen(false);
+  const handleLinkClick = (event, href) => {
+    event.preventDefault(); // Empêche le comportement par défaut du lien
+
+    const targetElement = document.querySelector(href);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    } // Scroll smooth vers le lien choisit dans le menu
+
+    setMobileMenuOpen(false); // Ferme le menu mobile après le clic
   };
 
   return (
@@ -35,12 +42,12 @@ export default function Example() {
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
-          {/* NE PAS TOUCHER */}
           {navigation.map((item) => (
             <a
               key={item.name}
               href={item.href}
-              className="text-sm font-semibold leading-6 text-gray-900"
+              onClick={(e) => handleLinkClick(e, item.href)}
+              className="text-sm font-semibold leading-6 text-darkGreen"
             >
               {item.name}
             </a>
@@ -69,14 +76,12 @@ export default function Example() {
           </div>
           <div className="mt-6 flow-root text-darkGreen ">
             <div className="-my-6 divide-y divide-gray-500/10">
-              <div className="space-y-2 py-6 ">
+              <div className="space-y-2 py-6">
                 {navigation.map((item) => (
                   <a
                     key={item.name}
                     href={item.href}
-                    onClick={() => {
-                      closedMenu();
-                    }}
+                    onClick={(e) => handleLinkClick(e, item.href)}
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     {item.name}

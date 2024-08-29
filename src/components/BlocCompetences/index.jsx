@@ -16,7 +16,7 @@ const BlocCompetences = ({ title, indices, indicesOutils, bgColor }) => {
         <p className="text-xl text-lightGreen font-medium">Technologies</p>
         <div className="flex flex-wrap">
           {indices.map((index) => (
-            <div key={index} className="p-2">
+            <div key={index} className="p-2 ">
               <Button type="clair" text={flatCompetences[index]} />
             </div>
           ))}

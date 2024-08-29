@@ -84,3 +84,141 @@ body {
 }
 
 /*****Fin section realisation*****/
+
+.cursor {
+  cursor: pointer;
+}
+
+/*****Affichage des realisations avec animation*****/
+.card-container {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 3px 36px -4px rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+}
+
+.card {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(60, 98, 85, 0.9);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+} /*ajoute une couleur de fond qui couvre toute la carte et est visible uniquement au survol*/
+
+.card:hover::after {
+  opacity: 1;
+}
+
+.card-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  color: #fff;
+  text-align: center;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .card-content {
+  opacity: 1; /* Afficher le texte au survol */
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-content h2,
+.card-content p {
+  margin: 0;
+}
+/*****Fin affichage des realisations avec animation*****/
+
+/*****Animation*****/
+
+/*Fleche header voir les realisations*/
+.slide-bottom {
+  -webkit-animation: slide-bottom 2s ease-in-out infinite alternate;
+  animation: slide-bottom 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+}
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+}
+
+/*****Fin Animation*****/
+
+/*****Animation et style du derouleur dans la modale*****/
+.derouleur {
+  background-color: #609966;
+  border-radius: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 52px;
+  padding: 0 20px;
+  z-index: 10000000;
+  position: relative;
+}
+
+.rotateBottom {
+  transition: transform 0.3s ease;
+  transform: rotate(180deg);
+}
+
+.rotateTop {
+  transition: transform 0.3s ease;
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-30%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.openDerouleur {
+  opacity: 0;
+  animation: slideInFromTop 0.3s ease-in forwards;
+  padding: 15px 20px;
+  background-color: #edf1d6;
+}
+
+/*****Fin derouleur*****/
