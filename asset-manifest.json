@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.1960264c.css",
-    "main.js": "/static/js/main.1c832038.js",
-    "static/media/Lato-Light.ttf": "/static/media/Lato-Light.c7400fcad9e48ca9043f.ttf",
-    "static/media/Lato-Regular.ttf": "/static/media/Lato-Regular.9d883d540ee2b4de8024.ttf",
-    "static/media/Lato-Bold.ttf": "/static/media/Lato-Bold.636be8de934918e38ed9.ttf",
-    "static/media/AbrilFatface-Regular.ttf": "/static/media/AbrilFatface-Regular.c2459f7f69cb5eb788d8.ttf",
-    "index.html": "/index.html",
-    "main.1960264c.css.map": "/static/css/main.1960264c.css.map",
-    "main.1c832038.js.map": "/static/js/main.1c832038.js.map"
+    "main.css": "/Portfolio-Elisa-Caillaud/static/css/main.8209c5b5.css",
+    "main.js": "/Portfolio-Elisa-Caillaud/static/js/main.9392abff.js",
+    "static/media/Lato-Light.ttf": "/Portfolio-Elisa-Caillaud/static/media/Lato-Light.c7400fcad9e48ca9043f.ttf",
+    "static/media/Lato-Regular.ttf": "/Portfolio-Elisa-Caillaud/static/media/Lato-Regular.9d883d540ee2b4de8024.ttf",
+    "static/media/Lato-Bold.ttf": "/Portfolio-Elisa-Caillaud/static/media/Lato-Bold.636be8de934918e38ed9.ttf",
+    "static/media/AbrilFatface-Regular.ttf": "/Portfolio-Elisa-Caillaud/static/media/AbrilFatface-Regular.c2459f7f69cb5eb788d8.ttf",
+    "index.html": "/Portfolio-Elisa-Caillaud/index.html",
+    "main.8209c5b5.css.map": "/Portfolio-Elisa-Caillaud/static/css/main.8209c5b5.css.map",
+    "main.9392abff.js.map": "/Portfolio-Elisa-Caillaud/static/js/main.9392abff.js.map"
   },
   "entrypoints": [
-    "static/css/main.1960264c.css",
-    "static/js/main.1c832038.js"
+    "static/css/main.8209c5b5.css",
+    "static/js/main.9392abff.js"
   ]
 }
