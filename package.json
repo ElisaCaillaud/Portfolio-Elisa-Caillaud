@@ -2,6 +2,7 @@
   "name": "portfolio-elisa",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://elisacaillaud.github.io/Portfolio-Elisa-Caillaud",
   "dependencies": {
     "@formspree/react": "^2.5.1",
     "@headlessui/react": "^2.1.2",

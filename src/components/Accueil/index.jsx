@@ -1,4 +1,5 @@
 import { ArrowLongDownIcon } from "@heroicons/react/20/solid";
+import profilImage from "../../assets/images/profil.jpg";
 
 const Accueil = () => {
   // Fonction pour faire défiler smooth jusqu'à une section spécifique
@@ -10,14 +11,14 @@ const Accueil = () => {
   };
 
   return (
-    <div>
+    <div id="accueil">
       <div className="pt-60 flex flex-col items-center lg:flex-row justify-center gap-16">
         <img
           className="rounded-[200px] w-[50%] sm:w-80 sm:h-80 object-cover"
-          src={process.env.PUBLIC_URL + "images/profil.jpg"}
+          src={profilImage}
           alt="Elisa Caillaud"
         />
-        <div id="accueil" className="text-center lg:text-left h-50vh">
+        <div className="text-center lg:text-left h-50vh">
           <h1 className="text-45px font-abril tracking-tight text-darkGreen sm:text-6xl">
             Elisa Caillaud
           </h1>
