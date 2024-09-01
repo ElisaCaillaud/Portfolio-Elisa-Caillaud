@@ -20,7 +20,8 @@ const SectionFooter = () => {
       </div>
       <div className="w-full flex justify-center">
         <p className="lg:w-4/5 w-4/5 mb-6 mt-3 text-sml leading-7 text-darkGreen font-lato text-center">
-          © 2024 - Réalisé par Elisa Caillaud
+          © 2024 - Réalisé par Elisa Caillaud avec les technologies React et
+          Tailwind CSS
         </p>
       </div>
     </div>

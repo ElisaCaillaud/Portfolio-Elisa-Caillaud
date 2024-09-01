@@ -27,19 +27,23 @@ const SectionRealisations = () => {
         </p>
       </div>
       <div className="w-full flex justify-center">
-        <div className="p-2 flex flex-wrap w-4/5 justify-center gap-4 sm:gap-6">
-          <Button
-            type="fonce"
-            text="Tout"
-            onClick={() => handleFilterClick(null)}
-          />
-          {indicesOutils.map((index) => (
+        <div className="p-2 flex flex-wrap w-4/5 justify-center gap-4 sm:gap-6 ">
+          <div className="hover:shadow-menu">
             <Button
-              key={index}
               type="fonce"
-              text={flatSkills[index]}
-              onClick={() => handleFilterClick(flatSkills[index])}
+              text="Tout"
+              onClick={() => handleFilterClick(null)}
             />
+          </div>
+          {indicesOutils.map((index) => (
+            <div className="button-container">
+              <Button
+                key={index}
+                type="fonce"
+                text={flatSkills[index]}
+                onClick={() => handleFilterClick(flatSkills[index])}
+              />
+            </div>
           ))}
         </div>
       </div>
