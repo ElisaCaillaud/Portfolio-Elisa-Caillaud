@@ -40,10 +40,14 @@ const BlocRealisations = ({ filter }) => {
       }${filter ? "filtered" : ""}`}
     >
       {filteredRealisations.map((realisation, index) => {
+        // Calcul pour vérifier si on est dans une ligne "paire" de groupes de deux éléments
         const even = Math.floor(index / 2) % 2 === 0;
+        // Vérification si l'index actuel est pair (l'élément est le premier de la paire)
         const pair = index % 2 === 0;
 
         const gridStyle = {
+          // Si la ligne est "paire" et l'élément est pair, la colonne commence à 1, sinon à 8
+          // Si la ligne est "impair", la colonne commence à 1 pour les éléments pairs, sinon à 6
           gridColumnStart: even ? (pair ? 1 : 8) : pair ? 1 : 6,
           gridColumnEnd: even ? (pair ? 8 : 13) : pair ? 6 : 13,
         };
@@ -53,7 +57,7 @@ const BlocRealisations = ({ filter }) => {
             <div
               style={{
                 backgroundImage: `url(${
-                  process.env.PUBLIC_URL + realisation.cover
+                  process.env.PUBLIC_URL + realisation.cover //variable pour le dossier public
                 })`,
               }}
               className="card h-80 p-7 w-full"

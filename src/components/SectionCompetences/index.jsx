@@ -5,7 +5,7 @@ const Competences = () => {
   const competencesData = [
     {
       title: competences[0]?.title,
-      indices: [0, 1, 2, 3, 4],
+      indices: [0, 1, 2, 3, 4], //indices de la compétence
       indicesOutils: [7, 5, 13],
       bgColor: "bg-darkGreen",
     },

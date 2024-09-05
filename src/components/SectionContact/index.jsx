@@ -14,17 +14,7 @@ const SectionContact = () => {
           <br />
           <br />
           <b>
-            <a
-              href="mailto:elisa.caillaud@outlook.fr"
-              target="_blank"
-              rel="noreferrer"
-            >
-              elisa.caillaud@outlook.fr
-            </a>
-            <br />
-            <a href="tel:+33647025497" target="_blank" rel="noreferrer">
-              06 47 02 54 97
-            </a>
+            <p>elisa.caillaud@outlook.fr</p>
           </b>
         </p>
       </div>

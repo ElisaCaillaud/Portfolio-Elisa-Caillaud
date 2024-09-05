@@ -4,11 +4,11 @@ import parcours from "../../datas/parcours.json";
 const SectionParcours = () => {
   const parcoursData = [
     {
-      title: parcours[0]?.title,
+      title: parcours[0]?.title, //les ? permettent d'éviter une erreur si la variable n'existe pas, c'est une mesure de sécurité pour éviter les null
       job: parcours[0]?.job,
       year: parcours[0]?.year,
       link: parcours[0]?.link,
-      indices: [0, 1, 2, 3, 4, 6, 7, 8],
+      indices: [0, 1, 2, 3, 4, 6, 7, 8], //indices de la compétence
       bgColor: "bg-darkGreen",
     },
     {

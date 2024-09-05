@@ -15,7 +15,7 @@ export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const handleLinkClick = (event, href) => {
-    event.preventDefault(); // Empêche le comportement par défaut du lien
+    event.preventDefault();
 
     const targetElement = document.querySelector(href);
     if (targetElement) {
@@ -55,8 +55,8 @@ export default function Example() {
         </div>
       </nav>
       <Dialog
-        open={mobileMenuOpen}
-        onClose={setMobileMenuOpen}
+        open={mobileMenuOpen} // Ouvre le menu
+        onClose={setMobileMenuOpen} // Ferme le menu
         className="lg:hidden"
       >
         <div className="fixed inset-0 z-20 bg-lightGreen" />
