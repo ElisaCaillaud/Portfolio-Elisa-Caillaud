@@ -14,7 +14,7 @@ const buttonStyles = {
   },
 };
 
-const Button = ({ type = "clair", text, ...props }) => {
+const Button = ({ type = "clair", cursor, text, ...props }) => {
   const styles = buttonStyles[type] || buttonStyles.clair;
   const { background, text: textColor } = styles || {};
 

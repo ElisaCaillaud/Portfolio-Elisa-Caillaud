@@ -6,7 +6,7 @@ import SectionRealisations from "../../components/SectionRealisations";
 import SectionParcours from "../../components/SectionParcours";
 import SectionContact from "../../components/SectionContact";
 import SectionFooter from "../../components/Footer";
-import ScrollToTop from "../../components/ScrollToTop";
+import { ScrollToTop } from "../../components/ScrollToTop";
 
 function Home() {
   return (
